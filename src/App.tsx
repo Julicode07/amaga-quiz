@@ -8,7 +8,7 @@ const MainRouter: React.FC = () => {
     <Router basename="/amaga-quiz/">
       <Routes>
         <Route path="/" element={<Quiz />} />
-        <Route path="/amaga-quiz/reset" element={<ResetLocalStorage />} />
+        <Route path="reset" element={<ResetLocalStorage />} />
       </Routes>
     </Router>
   );
