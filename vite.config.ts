@@ -9,7 +9,6 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/amaga-quiz/",
     build: {
     outDir: 'dist'
   }
