@@ -81,7 +81,7 @@ const Quiz = () => {
               {finalMessage}
             </h1>
             <p className="text-6xl font-bold text-gray-300">
-              {score + 1} de {totalQuestions} {/* Usar totalQuestions aquí */}
+              {score} de {totalQuestions}
             </p>
           </div>
         ) : (

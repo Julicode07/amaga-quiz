@@ -1,11 +1,6 @@
 import Marquee from "@/magicui/components/magicui/marquee";
 
-const imageUrls = [
-  "https://turismoantioquia.travel/wp-content/uploads/2021/09/BANNERS-MUNICIPIOS-AMAGA.jpg",
-  "https://estaticos.elcolombiano.com/binrepository/848x565/34c0/780d565/none/11101/BHCE/ceamaga-5-jpg_40083712_20220603094945.jpg",
-  "https://s2.wklcdn.com/image_15/472831/43858624/28708688.700x525.jpg",
-  "https://s2.wklcdn.com/image_15/472831/16870211/10603517.700x525.jpg",
-];
+import Imagenes from "./assets/imagenes";
 
 const ImageSlide = ({ src }: { src: string }) => {
   return (
@@ -25,7 +20,7 @@ export default function MarqueeDemo() {
         style={{ "--duration": "30s" }}
         pauseOnHoverClass="md:hover:pause"
       >
-        {imageUrls.map((src, index) => (
+        {Object.values(Imagenes).map((src, index) => (
           <ImageSlide key={index} src={src} />
         ))}
       </Marquee>
