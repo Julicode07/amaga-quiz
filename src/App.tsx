@@ -5,7 +5,7 @@ import ResetLocalStorage from "./resetLocalStorage";
 
 const MainRouter: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/amaga-quiz/">
       <Routes>
         <Route path="/" element={<Quiz />} />
         <Route path="/reset" element={<ResetLocalStorage />} />
