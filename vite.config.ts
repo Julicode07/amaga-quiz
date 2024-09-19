@@ -10,4 +10,7 @@ export default defineConfig({
     },
   },
   base: "/amaga-quiz/",
+    build: {
+    outDir: 'dist'
+  }
 });
