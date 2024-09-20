@@ -4,7 +4,7 @@ import Imagenes from "./assets/imagenes";
 
 const ImageSlide = ({ src }: { src: string }) => {
   return (
-    <div className="relative flex-shrink-0 w-64 h-32 sm:w-48 sm:h-24 flex items-center justify-center overflow-hidden">
+    <div className="relative flex-shrink-0 w-64 h-32 sm:w-48 sm:h-24 lg:w-72 lg:h-48 flex items-center justify-center overflow-hidden">
       <img src={src} alt="" className="object-cover w-full h-full" />
     </div>
   );
@@ -12,7 +12,7 @@ const ImageSlide = ({ src }: { src: string }) => {
 
 export default function MarqueeDemo() {
   return (
-    <div className="relative flex h-36 w-full overflow-hidden bg-background sm:h-24">
+    <div className="relative flex h-36 w-full overflow-hidden bg-background sm:h-24 lg:h-36">
       <Marquee
         pauseOnHover={false}
         className="whitespace-nowrap"

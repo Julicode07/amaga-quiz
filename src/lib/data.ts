@@ -1,184 +1,168 @@
-
 export type Question = {
-  question: string,
-  options: string[],
-  answer: string,
+  question: string;
+  options: string[];
+  answer: string;
 };
 
 export const quizData: Question[] = [
   {
-    question: "¿Cuál es el planeta más cercano al Sol?",
-    options: ["Mercurio", "Venus", "Tierra", "Marte"],
-    answer: "Mercurio",
-  },
-  {
-    question: "¿Cuántos huesos tiene el cuerpo humano?",
-    options: ["206", "205", "210", "200"],
-    answer: "206",
-  },
-  {
-    question: "¿Cuál es el metal más abundante en la Tierra?",
-    options: ["Hierro", "Aluminio", "Cobre", "Plomo"],
-    answer: "Hierro",
-  },
-  {
-    question: "¿Cuál es el río más largo del mundo?",
-    options: ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
-    answer: "Amazonas",
-  },
-  {
-    question: "¿En qué año llegó el hombre a la Luna?",
-    options: ["1969", "1970", "1968", "1971"],
-    answer: "1969",
-  },
-  {
-    question: "¿Cuál es el océano más grande?",
-    options: ["Pacífico", "Atlántico", "Índico", "Ártico"],
-    answer: "Pacífico",
-  },
-  {
-    question: "¿Quién escribió 'Cien años de soledad'?",
+    question: "¿En qué año fue fundado el municipio de Amagá y por quién?",
     options: [
-      "Gabriel García Márquez",
-      "Mario Vargas Llosa",
-      "Julio Cortázar",
-      "Pablo Neruda",
+      "1850 por José María de la Cruz",
+      "1876 por José María de la Cruz",
+      "1876 por Francisco de Miranda",
+      "1850 por Francisco de Miranda",
     ],
-    answer: "Gabriel García Márquez",
+    answer: "1876 por José María de la Cruz",
   },
   {
-    question: "¿Cuál es el símbolo químico del oro?",
-    options: ["Au", "Ag", "Fe", "Cu"],
-    answer: "Au",
-  },
-  {
-    question: "¿Quién pintó la Mona Lisa?",
+    question:
+      "¿Cuál ha sido la importancia de la minería en la historia de Amagá?",
     options: [
-      "Leonardo da Vinci",
-      "Pablo Picasso",
-      "Vincent van Gogh",
-      "Claude Monet",
+      "Destruyó el medio ambiente",
+      "Proporciona empleo a la población",
+      "Fomentó el turismo",
+      "Aumentó la población",
     ],
-    answer: "Leonardo da Vinci",
+    answer: "Proporciona empleo a la población",
   },
   {
-    question: "¿Qué país tiene la mayor población?",
-    options: ["China", "India", "Estados Unidos", "Indonesia"],
-    answer: "China",
-  },
-  {
-    question: "¿Cuál es el país más grande del mundo?",
-    options: ["Rusia", "Canadá", "China", "Estados Unidos"],
-    answer: "Rusia",
-  },
-  {
-    question: "¿En qué año comenzó la Segunda Guerra Mundial?",
-    options: ["1939", "1940", "1941", "1938"],
-    answer: "1939",
-  },
-  {
-    question: "¿Cuál es la capital de Australia?",
-    options: ["Canberra", "Sídney", "Melbourne", "Brisbane"],
-    answer: "Canberra",
-  },
-  {
-    question: "¿Quién fue el primer presidente de Estados Unidos?",
+    question: "¿A qué altitud se encuentra el municipio de Amagá?",
     options: [
-      "George Washington",
-      "Abraham Lincoln",
-      "Thomas Jefferson",
-      "John Adams",
+      "1,400 metros sobre el nivel del mar",
+      "2,000 metros sobre el nivel del mar",
+      "1,200 metros sobre el nivel del mar",
+      "1,600 metros sobre el nivel del mar",
     ],
-    answer: "George Washington",
+    answer: "1,400 metros sobre el nivel del mar",
   },
   {
-    question: "¿Cuál es el idioma más hablado en el mundo?",
-    options: ["Mandarín", "Español", "Inglés", "Hindú"],
-    answer: "Mandarín",
-  },
-  {
-    question: "¿Qué elemento tiene el símbolo químico 'O'?",
-    options: ["Oxígeno", "Oro", "Osmio", "Oganesón"],
-    answer: "Oxígeno",
-  },
-  {
-    question: "¿Cuál es el país con más islas en el mundo?",
-    options: ["Suecia", "Filipinas", "Japón", "Indonesia"],
-    answer: "Suecia",
-  },
-  {
-    question: "¿Quién escribió 'Don Quijote de la Mancha'?",
+    question: "¿Cuáles son los principales atractivos turísticos de Amagá?",
     options: [
-      "Miguel de Cervantes",
-      "William Shakespeare",
-      "Lope de Vega",
-      "Gustavo Adolfo Bécquer",
+      "Plaza de Toros y Catedral",
+      "Parque Principal y Salto de La Sabana",
+      "Cerro de La Cruz y Parque Arqueológico",
+      "Cascada de La Llorona y Jardín Botánico",
     ],
-    answer: "Miguel de Cervantes",
+    answer: "Parque Principal y Salto de La Sabana",
   },
   {
-    question: "¿Cuál es el planeta más grande del sistema solar?",
-    options: ["Júpiter", "Saturno", "Urano", "Neptuno"],
-    answer: "Júpiter",
-  },
-  {
-    question: "¿Cuál es la ciudad más poblada del mundo?",
-    options: ["Tokio", "Nueva York", "Shanghái", "Delhi"],
-    answer: "Tokio",
-  },
-  {
-    question: "¿Qué país es conocido como la 'tierra de los mil lagos'?",
-    options: ["Finlandia", "Noruega", "Suecia", "Canadá"],
-    answer: "Finlandia",
-  },
-  {
-    question: "¿Quién desarrolló la teoría de la relatividad?",
+    question:
+      "¿Cuál es el clima predominante en Amagá y cómo influye en su agricultura?",
     options: [
-      "Albert Einstein",
-      "Isaac Newton",
-      "Niels Bohr",
-      "Galileo Galilei",
+      "Frío, limita la agricultura",
+      "Desértico, no se cultiva nada",
+      "Templado, permite diversidad de cultivos",
+      "Tropical, favorece el cultivo de café",
     ],
-    answer: "Albert Einstein",
+    answer: "Tropical, favorece el cultivo de café",
   },
   {
-    question: "¿Cuál es el continente más grande?",
-    options: ["Asia", "África", "América", "Europa"],
-    answer: "Asia",
+    question: "¿Qué festividades tradicionales se celebran en Amagá?",
+    options: [
+      "Fiestas del Niño y Semana Santa",
+      "Fiesta de las Flores y Fiestas Patrias",
+      "Fiesta de San Juan y Festival del Río",
+      "Fiesta de la Música y Carnaval",
+    ],
+    answer: "Fiesta de San Juan y Festival del Río",
   },
   {
-    question: "¿Cuál es el órgano más grande del cuerpo humano?",
-    options: ["Piel", "Corazón", "Hígado", "Pulmones"],
-    answer: "Piel",
+    question:
+      "¿Cómo se preserva el patrimonio arquitectónico colonial en el centro de Amagá?",
+    options: [
+      "Destrucción de edificios antiguos",
+      "Construcción de nuevos edificios",
+      "Restauraciones periódicas",
+      "Reemplazo por infraestructura moderna",
+    ],
+    answer: "Restauraciones periódicas",
   },
   {
-    question: "¿Cuál es el metal más caro del mundo?",
-    options: ["Rodio", "Oro", "Plata", "Platino"],
-    answer: "Rodio",
+    question:
+      "¿Qué productos agrícolas, además del café, son representativos de Amagá?",
+    options: [
+      "Frijoles y maíz",
+      "Cacao y plátano",
+      "Cacao y arroz",
+      "Maíz y caña de azúcar",
+    ],
+    answer: "Cacao y plátano",
   },
   {
-    question: "¿Cuál es el río más caudaloso del mundo?",
-    options: ["Amazonas", "Nilo", "Yangtsé", "Misisipi"],
-    answer: "Amazonas",
+    question:
+      "¿Qué actividades al aire libre o ecoturísticas se pueden realizar en los alrededores de Amagá?",
+    options: [
+      "Deportes acuáticos y escalada",
+      "Ciclismo y pesca",
+      "Senderismo y observación de aves",
+      "Caminatas y fotografía",
+    ],
+    answer: "Senderismo y observación de aves",
   },
   {
-    question: "¿Qué país tiene la mayor cantidad de pirámides?",
-    options: ["Sudán", "Egipto", "México", "Guatemala"],
-    answer: "Sudán",
+    question:
+      "¿Cuál es el papel de la música y la danza en las festividades de Amagá?",
+    options: [
+      "Son un mero entretenimiento",
+      "Fomentan la cultura local",
+      "No tienen relevancia",
+      "Solo se utilizan en eventos especiales",
+    ],
+    answer: "Fomentan la cultura local",
   },
   {
-    question: "¿Qué país inventó el papel?",
-    options: ["China", "Egipto", "India", "Grecia"],
-    answer: "China",
+    question:
+      "¿Cómo ha cambiado la actividad minera en Amagá en los últimos años?",
+    options: [
+      "Se ha expandido significativamente",
+      "Se ha mantenido igual",
+      "Ha sido completamente eliminada",
+      "Ha disminuido por regulaciones",
+    ],
+    answer: "Ha disminuido por regulaciones",
   },
   {
-    question: "¿Qué animal es conocido por su lento movimiento?",
-    options: ["Perezoso", "Tortuga", "Caracol", "Koala"],
-    answer: "Perezoso",
+    question:
+      "¿Qué influencia han tenido los ancestros mineros en las costumbres y tradiciones locales?",
+    options: [
+      "Ninguna, todo ha cambiado",
+      "Fomentan el orgullo local",
+      "Han creado conflictos sociales",
+      "Solo influyen en la economía",
+    ],
+    answer: "Fomentan el orgullo local",
   },
   {
-    question: "¿Qué deporte es conocido como el 'rey de los deportes'?",
-    options: ["Fútbol", "Béisbol", "Baloncesto", "Tenis"],
-    answer: "Fútbol",
+    question: "¿Cuál es el impacto del turismo en la economía actual de Amagá?",
+    options: [
+      "Aumenta el ingreso local",
+      "No tiene impacto",
+      "Disminuye el empleo",
+      "Afecta negativamente la cultura",
+    ],
+    answer: "Aumenta el ingreso local",
+  },
+  {
+    question:
+      "¿Qué cambios ha experimentado la economía de Amagá en los últimos años?",
+    options: [
+      "Concentración en minería",
+      "Diversificación hacia el turismo",
+      "Estancamiento total",
+      "Reducción en producción agrícola",
+    ],
+    answer: "Diversificación hacia el turismo",
+  },
+  {
+    question:
+      "¿Cómo está respondiendo Amagá a los desafíos ambientales relacionados con la minería y la agricultura?",
+    options: [
+      "Ignorando los problemas",
+      "Rechazando regulaciones",
+      "Implementando prácticas sostenibles",
+      "Desarrollando más minería",
+    ],
+    answer: "Implementando prácticas sostenibles",
   },
 ];
