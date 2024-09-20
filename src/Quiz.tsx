@@ -15,23 +15,23 @@ const Quiz = () => {
   const totalQuestions = 8;
 
   useEffect(() => {
-    // const savedScore = localStorage.getItem("score");
-    // const savedMessage = localStorage.getItem("finalMessage");
-    // const savedQuestions = localStorage.getItem("totalQuestions");
+    const savedScore = localStorage.getItem("score");
+    const savedMessage = localStorage.getItem("finalMessage");
+    const savedQuestions = localStorage.getItem("totalQuestions");
 
-    // if (savedScore && savedQuestions) {
-    //   setScore(Number(savedScore));
-    //   setFinalMessage(savedMessage || "");
-    //   setShowScore(true);
-    //   if (Number(savedScore) >= 6) {
-    //     setIsConfettiVisible(true);
-    //   }
-    // } else {
-    const shuffledQuestions = quizData.sort(() => 0.5 - Math.random());
-    const selectedQuestions = shuffledQuestions.slice(0, totalQuestions);
-    setQuestions(selectedQuestions);
-    // localStorage.setItem("totalQuestions", String(totalQuestions));
-    // }
+    if (savedScore && savedQuestions) {
+      setScore(Number(savedScore));
+      setFinalMessage(savedMessage || "");
+      setShowScore(true);
+      if (Number(savedScore) >= 6) {
+        setIsConfettiVisible(true);
+      }
+    } else {
+      const shuffledQuestions = quizData.sort(() => 0.5 - Math.random());
+      const selectedQuestions = shuffledQuestions.slice(0, totalQuestions);
+      setQuestions(selectedQuestions);
+      localStorage.setItem("totalQuestions", String(totalQuestions));
+    }
   }, []);
 
   const handleAnswerSelect = (option: string) => {
@@ -53,8 +53,8 @@ const Quiz = () => {
         score + (selectedAnswer === questions[currentQuestion].answer ? 1 : 0);
       const message = finalScore >= 6 ? "¡Felicidades!" : "¡A la próxima!";
       setFinalMessage(message);
-      // localStorage.setItem("score", String(finalScore));
-      // localStorage.setItem("finalMessage", message);
+      localStorage.setItem("score", String(finalScore));
+      localStorage.setItem("finalMessage", message);
       if (finalScore >= 6) {
         setIsConfettiVisible(true);
       }
